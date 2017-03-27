@@ -1,0 +1,16 @@
+﻿<div ng-controller="SingleUserController">
+    <h2>{{user.name}}</h2>
+    {{error}}
+    
+        <img style="height:100px;width:100px" ng-src="{{user.avatar_url}}" title="{{user.name}}" />
+    
+       
+    <div>
+                   <p>Login Id: <b>{{user.login}} </b></p>
+                      <p>Email: <b>{{user.email}}</b></p>
+        <p ng-hide="{{user.blog}}" class="ng-hide">Blog: <b>{{user.blog}}</b></p>
+        <p>Public Repositories: <b>{{user.public_repos}}</b></p>
+                  <p>Followers: <b>{{user.followers}}</b></p>
+                  <p>Following: <b>{{user.following}}</b></p>
+    </div>
+</div>

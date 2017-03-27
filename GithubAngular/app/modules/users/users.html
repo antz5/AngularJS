@@ -1,0 +1,19 @@
+﻿<div ng-controller="usersController">
+    <h1>{{message}}</h1>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>URL</td>
+                <td>Type</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="user in users">
+                <td><a href="#/users/{{user.login}}">{{user.login}}</a></td>
+                <td>{{user.url}}</td>
+                <td>{{user.type}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
